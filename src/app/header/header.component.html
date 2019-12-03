@@ -1,0 +1,29 @@
+<header>
+    <div class="logo fl" *ngIf="showLogo">
+        <img [src]="userLogo == '' ? 'assets/images/logo.png' : userLogo">
+    </div>
+<div class="right-head fr" *ngIf="showRightHead">
+        <p class="info-text">{{title}}</p>
+        <div class="user-nav cx">
+            <div class="navbar-toggler">
+                <div class="navbar-toggler-icon cx">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="sub-menu" [style.display]="showMenu ? 'block' : 'none'">
+                    <li><a href="/main">{{'HEADER.BUTTON_MAIN' | translate}}</a></li>
+                    <li><a href="/detail-user">{{'HEADER.BUTTON_DETAIL_USER' | translate}}</a></li>
+                    <li><a (click)="historyUpload()">{{'HEADER.BUTTON_HISTORY_UPLOAD' | translate}}</a></li>
+                    <li><a href="/history">{{'HEADER.BUTTON_HISTOTY_APP' | translate}}</a></li>
+                    <li><a (click)="logout()">{{'HEADER.BUTTON_LOGOUT' | translate}}</a></li>
+                </ul>
+            </div>
+            <span class="user-infor"><span class= "user-name text-eliss">{{userName}}</span></span>
+        </div>
+        <div>
+        <button *ngIf="fileWaitApprovalTotal > 0" class="btn-df"
+            (click)="goToListApplyApproval()">{{'HEADER.BUTTON_PLEASE_APPROVE' | translate}}({{fileWaitApprovalTotal}})</button>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,55 @@
+<div class="com0002 scr">
+    <div class="container-fluid">
+        <app-header></app-header>
+        <h2 class="title-lv2">{{'COMMON.MODEMS' | translate}}</h2>
+        <section class="main-contents">
+        
+        <div class="box-msg" *ngIf="errSubmit">{{errSubmit | translate}} {{extensionError}}</div>
+        <div *ngIf="serials.length > 0">
+            <div class="box-ultil cx">
+                <div class="form-search fl cx">
+                    <div class="row-input">
+                        <input type="text" [(ngModel)]="searchValue" (focus)="hiden=true" (blur)="hiden=false" />
+                        <span class="ic-search" *ngIf="!hiden && !searchValue"></span>
+                        <button class="btn-df" (click)="search()" translate>{{'COMMON.BUTTON_SEARCH'}}</button>
+                    </div>
+                </div>
+            </div>     
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th width="30px"><span>{{'MODEM.ID' | translate}}</span></th>
+                        <th width="50px"><span> {{'MODEM.Index' | translate}}</span></th>
+                        <th width="100px"><span>{{'MODEM.Port' | translate}}</span></th>
+                        <th width="100px"><span>{{'MODEM.Status' | translate}}</span></th>
+                        <th width="150px"><span>{{'MODEM.Phone' | translate}}</span></th>
+                        <th width="110px"><span>{{'MODEM.Index Simbank' | translate}}</span></th>
+                        <th><span>{{'MODEM.Info' | translate}}</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let modem of serials; let i = index">
+                        <td><span>{{i+1}}</span></td>
+                        <td><span>{{modem.index}}</span></td>
+                        <td><span>{{modem.port}}</span></td>
+                        <td><span>{{modem.status}}</span></td>
+                        <td><span>{{modem.phone}}</span></td>
+                        <td><span>{{modem.index_simbank}}</span></td>
+                        <td><span>{{modem.info}}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-group" >
+                <!--<button class="btn-df" (click)="loadphone()" translate>{{'COMMON.DELETE'}}</button> -->
+                <button class="btn-df" (click)="connect()" translate>{{'COMMON.CONNECT'}}</button>
+                <button class="btn-df" (click)="loadphone()" translate>{{'COMMON.LOADPHONE'}}</button>
+            </div>
+        </div>
+        <p translate *ngIf="serials.length == 0 && message" class="warning">{{message | translate}}</p>
+        </section>
+        <app-footer></app-footer>
+    </div>
+</div>
+<ngx-spinner bdOpacity=.6 bdColor="rgba(51, 51, 51, 0.8)" size="medium" color="#fff" type="ball-spin-clockwise">
+    <p style="color: white"> Loading... </p>
+</ngx-spinner>

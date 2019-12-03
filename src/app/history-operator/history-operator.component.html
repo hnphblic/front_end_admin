@@ -1,0 +1,116 @@
+<div class="com0008 src">
+    <div class="container-fluid">
+        <app-header></app-header>
+        <h1 class="title-page" appNetwork></h1>
+        <h2 class="title-lv2">{{'HISTORY.HISTORY' | translate}}</h2>
+        <section class="main-contents">
+            <div class="box-ultil cx">
+                <div class="form-search">
+                    <div class="row-input fl">
+                        <input type="search" [(ngModel)]="valueSearch" name="valueSearch" (focus)="hiden=true" (blur)="hiden=false" />
+                        <span class="ic-search" *ngIf="!hiden && !valueSearch"></span>
+                        <button class="btn-df" (click)="getAllHistoryOperator()">{{'COMMON.SEARCH' | translate}}</button>
+                    </div>
+                </div>
+            </div>
+            <ngx-spinner bdOpacity=.6 bdColor="rgba(51, 51, 51, 0.8)" size="medium" color="#fff"
+                type="ball-spin-clockwise">
+                <p style="color: white"> Loading... </p>
+            </ngx-spinner>
+            <div *ngIf="listDataTemp.length > 0">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th width="15%">
+                                <span (click)="sortData('date', valueSort =  convertValueSort(valueSort))">{{'HISTORY.DATE' | translate}}
+                                    <span *ngIf="fieldSort === 'date'">
+                                        <span *ngIf="valueSort == 1">▲</span>
+                                        <span *ngIf="valueSort == 2">▼</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th width="20%">
+                                <span (click)="sortData('fileName', valueSort =  convertValueSort(valueSort))">{{'COMMON.NAME' | translate}}
+                                    <span *ngIf="fieldSort === 'fileName'">
+                                        <span *ngIf="valueSort == 1">▲</span>
+                                        <span *ngIf="valueSort == 2">▼</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th width="9%">
+                                <span (click)="sortData('size', valueSort =  convertValueSort(valueSort))">{{'COMMON.SIZE' | translate}}
+                                    <span *ngIf="fieldSort === 'size'">
+                                        <span *ngIf="valueSort == 1">▲</span>
+                                        <span *ngIf="valueSort == 2">▼</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th width="8%">
+                                <span (click)="sortData('systemName', valueSort =  convertValueSort(valueSort))">{{'HISTORY.IF' | translate}}
+                                    <span *ngIf="fieldSort === 'systemName'">
+                                        <span *ngIf="valueSort == 1">▲</span>
+                                        <span *ngIf="valueSort == 2">▼</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th width="11%">
+                                <span (click)="sortData('action', valueSort =  convertValueSort(valueSort))">{{'HISTORY.ACTION' | translate}}
+                                    <span *ngIf="fieldSort === 'action'">
+                                        <span *ngIf="valueSort == 1" class="icon-sort">▲</span>
+                                        <span *ngIf="valueSort == 2">▼</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th width="11%">
+                                <span (click)="sortData('userIdRequest', valueSort =  convertValueSort(valueSort))">{{'HISTORY.UPLOADER' | translate}}
+                                    <span *ngIf="fieldSort === 'userIdRequest'">
+                                        <span *ngIf="valueSort == 1">▲</span>
+                                        <span *ngIf="valueSort == 2">▼</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th width="12%">
+                                <span (click)="sortData('userIdApproval', valueSort =  convertValueSort(valueSort))">{{'HISTORY.RECIEVER' | translate}}
+                                    <span *ngIf="fieldSort === 'userIdApproval'">
+                                        <span *ngIf="valueSort == 1">▲</span>
+                                        <span *ngIf="valueSort == 2">▼</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th>{{'COMMON.COMMENT' | translate}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let file of listDataShow">
+                            <td><span>{{file.date}}</span></td>
+                            <td class="text-eliss"><span>{{file.fileName}}</span></td>
+                            <td><span>{{file.size}}</span></td>
+                            <td><span>{{file.systemName}}</span></td>
+                            <td><span>{{file.action}}</span></td>
+                            <td class="text-eliss"><span>{{file.userName}}</span></td>
+                            <td><span>{{file.userId}}</span></td>
+                            <td class="comment">
+                                <span class="text-eliss">{{file.comment}}</span>
+                                <div *ngIf="file.comment" [class]="file.comment == '' ? '' : 'showFull'">{{file.comment}}</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div *ngIf="recordTotal > limitRecord">
+                    <div class="paging cx">
+                        <div class="fl">[ {{'PAGING.TOTAL' | translate}}{{recordTotal}}{{'PAGING.RECORD' | translate}} ] 
+                            {{currentPage}}/{{pageTotal}}{{'PAGING.PAGE' | translate}}</div>
+                        <div class="fr">
+                            <label *ngIf="currentPage == 1" disabled>[{{'PAGING.LINK_PREVIOUS' | translate}}20{{'PAGING.RECORD' | translate}}</label> 
+                         <a (click)="prePage()" *ngIf="currentPage != 1">[{{'PAGING.LINK_PREVIOUS' | translate}}20{{'PAGING.RECORD' | translate}}</a>｜
+                            <label *ngIf="currentPage == pageTotal" disabled>{{'PAGING.LINK_NEXT' | translate}}20{{'PAGING.RECORD' | translate}}]</label>
+                            <a (click)="nextPage()" *ngIf="currentPage < pageTotal">{{'PAGING.LINK_NEXT' | translate}}20{{'PAGING.RECORD' | translate}}]</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p *ngIf="message">{{ message | translate}}</p>
+        </section>
+        <app-footer></app-footer>
+    </div>
+</div>

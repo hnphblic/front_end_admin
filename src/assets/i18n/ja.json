@@ -1,0 +1,233 @@
+﻿{
+    "COMMON": {
+        "MODEMS": "MODEMS",
+        "DELETE": "Delete",
+        "CONNECT":"Connect",
+        "LOADPHONE":"Load Phone",
+        "BUTTON_BACK": "戻る",
+        "BUTTON_CANCEL": "キャンセル",
+        "BUTTON_NEXT": "次へ",
+        "BUTTON_MODIFY": "変更する",
+	    "SEARCH": "検索",
+        "BUTTON_DELETE": "デリート",
+        "BUTTON_OK": "Ok",
+        "CONTENT_LINK_CONTACT_ADMIN_HEAD": "ユーザーIDを忘れた方は、",
+        "CONTENT_LINK_CONTACT_ADMIN_SECOND": "本サービスの管理者までお問い合わせください。",
+        "CONTENT_LINK_CONTACT_ADMIN_THIRD": "サービス管理者に連絡するときは ",
+        "LINK_CONTACT_ADMIN": "こちら",
+        "CONTENT_LINK_CONTACT_ADMIN_LAST": "から。",
+        "SELECT_ALL": "全て選択",
+        "BUTTON_SEARCH": "検索",
+        "TIME_UPLOAD": "登録日",
+        "STATUS": "状況",
+        "COMMENT_APP": "申請コメント",
+        "DRAG":"ここにファイルをドラッグしてください",
+        "INPUT_COMMENT": "申請コメント入力"
+    },
+    "SYSTEM_ERROR": {
+        "TITLE": "システムエラー",
+        "CONTENT": "アクセスが集中している可能性があります。しばらく待ってからアクセスしてください。\nブラウザの<戻る>ボタンがクリックされた可能性があります。<戻る>ボタンは使用しないでください。",
+        "BACK_MAIN": "メイン画面へ戻る。"
+    },
+    
+    "LOGIN": {
+        "LINK": "パスワードをお忘れですか？",
+        "ID": "ユーザーID",
+        "PASSWORD": "パスワード",
+        "BUTTON": "ログイン"
+    },
+    "HISTORY":{
+        "HISTORY": "操作履歴",
+        "DATE":"日時",
+        "IF": "I/F",
+        "ACTION": "操作",
+        "UPLOADER": "操作者",
+        "RECIEVER": "ユーザーID"
+    },
+    "HISTORY_UPLOAD": {
+        "TITLE": "ファイル一覧"
+    },
+    "UPLOAD": {
+        "UPLOAD_ARROW":"↑アップロード",
+        "CLOSE":"閉じる",
+        "ALL_FILE":"全ファイル(*.*)",
+        "OPEN":"オープン"
+    },
+    "RESET_PASSWORD": {
+        "TITLE": "パスワードを忘れた方へ",
+        "CONTENT_FIRST": "ユーザーIDを入力して「送信」ボタンをクリックしてください。",
+        "CONTENT_SECOND": "パスワードを再発行してメールでお知らせします。",
+        "CONTENT_LAST": "ただしメールアドレスは本システムに登録されているアドレスに限ります。",
+        "ERROR_MESSAGE": "登録されていないユーザーIDまたはメールアドレスです。",
+        "WARNING": "は必須項目",
+        "USER_ID": "ユーザーID：",
+        "MAIL": "メールアドレス：",
+        "BUTTON_SEND": "送信"
+    },
+    "COMPLETE_RESET_PASSWORD": {
+        "TITLE": "パスワードを再発行しました",
+        "CONTENT": "パスワードを再発行してメールで送信しました。",
+        "LINK": "ログイン画面に戻る"
+    },
+    "CHANGE_PASSWORD": {
+        "TITLE": "新しいパスワードを入力し、＜次へ＞ボタンをクリックしてください。",
+        "WARNING_FIRST": "は必須項目",
+        "NEW_PASSWORD": "新しいパスワード:",
+        "RE_ENTER": "（再入力)",
+        "WARNING_SECOND": "※パスワードの強度条件は、",
+        "WARNING_THIRD": "文字以上64文字以内",
+        "WARNING_LAST": "です。",
+        "PASSWORD_CURRENT": "現在のパスワード:"
+    },
+    "CHANGE_PASSWORD_CONFIRM": {
+        "TITLE": "パスワード変更確認",
+        "CONTENT": "入力したパスワードに変更しますか？"
+    },
+    "LOGOUT": {
+        "TITLE": "ログアウトしました。",
+        "LINK": "ログイン画面へ戻る。"
+    },
+    "TIMEOUT": {
+        "TITLE": "タイムアウトしました。",
+        "LINK": "ログイン画面へ戻る。"
+    },
+    "HEADER": {
+        "BUTTON_MAIN": "メイン",
+        "BUTTON_DETAIL_USER": "個人設定",
+        "BUTTON_HISTORY_UPLOAD": "ファイル一覧",
+        "BUTTON_HISTOTY_APP": "操作履歴",
+        "BUTTON_LOGOUT": "ログアウト",
+        "BUTTON_PLEASE_APPROVE": "承認申請"
+    },
+    "FORWARD_FILE": {
+        "TITLE_FIRST": "",
+        "TITLE_SECOND": "でアップロードしたファイルを、",
+        "TITLE_LAST": "に転送しますか？",
+        "BUTTON_FORWARD": "転送する"
+    },
+    "COMMENT_REJECT_FILE_APPROVE": {
+        "TITLE": "ファイル転送を否認します。",
+        "BUTTON_REJECT": "否認"
+    },
+    "COMMENT_PLEASE_APPROVE": {
+        "TITLE": "",
+        "FILE": "ファイルアップロードします。"
+    },
+    "STATUS_UPLOAD": {
+        "UPLOAD": "ファイルをアップロードしています",
+        "CHECK_VIRUS": "ウイルスファイルの確認"
+    },
+    "DETAIL_USER": {
+        "CONTENT_LINK_CHANGE_PASS_HEAD": "パスワードの変更は",
+        "LINK_CHANGE_PASS": "こちら",
+        "CONTENT_LINK_CHANGE_PASS_LAST": "から。",
+        "REGISTER_USER_INFO": "ユーザー登録情報",
+        "ROLE": "役割: ",
+        "USER_ID": "ユーザーID: ",
+        "NAME": "ユーザー名: ",
+        "MAIL": "メールアドレス: ",
+        "PASSWORD_EXPIRE": "パスワードの有効期間: ",
+        "ACCOUNT_EXPIRE": "アカウントの有効期間: ",
+        "DISK_USAGE_STATUS": "ディスク使用状況",
+        "QUOTE_MAX": "最大使用可能容量: ",
+        "CURRENT_USAGE": "現在の使用量: ",
+        "USE_RATE": "使用率: ",
+        "WARNING": "は必須項目",
+        "WARNING_INPUT_LENGTH": "128文字以内",
+        "USER_SETTING": "ユーザー設定",
+        "CONTENT_LINK_CONTACT_ADMIN_HEAD": "サービス管理者に連絡するときは",
+        "LINK_CONTACT_ADMIN": "こちら",
+        "CONTENT_LINK_CONTACT_ADMIN_LAST": "から。"
+    },
+    "LIST_APPLY_APPROVAL": {
+        "TITLE_LV2": "承認申請管理",
+        "BUTTON_REJECTION": "否認",
+        "BUTTON_APPROVAL": "承認",
+        "STATUS": "状態",
+        "REGISTER_PERSON": "登録者"
+    },
+    "PAGING": {
+        "TOTAL": "合計：",
+        "RECORD": "件",
+        "PAGE": "ページ",
+        "LINK_PREVIOUS": "前の",
+        "LINK_NEXT": "次の"
+    },
+    "ERROR_UPLOAD": {
+        "TITLE": "以下のファイルはアップロードできませんでした",
+        "REASON": "理由"
+    },
+    "CONTINUES_UPLOAD":{
+        "FIRST_TITLE": " ",
+        "TITLE": "ファイルをアップロードしました。",
+        "TITLE_INTRO": "セキュリティ検査、承認が完了するまでお待ちください。",
+        "CHECKBOX": "検査、承認完了通知メールを受け取る",
+        "BTN_END": "終了する",
+        "BTN_CONTINUES": "操作を続ける"
+    },
+    "ERROR": {
+        "ERR_COM_0001": "登録されていないユーザーIDまたはメールアドレスです。",
+        "ERR_COM_0002": "パスワードを再発行できませんでした。本システムの管理者にお問い合わせください。",
+        "ERR_COM_0003": "パスワード強度の条件を満たしていません。",
+        "ERR_COM_0004": "入力したパスワードは使用できません。",
+        "ERR_COM_0005": "入力されたパスワードが確認用パスワードと一致していません。, 再度入力しなおしてください。",
+        "ERR_COM_0006": "ユーザーIDまたはパスワードが正しくありません。",
+        "ERR_COM_0008": "大文字と小文字が含まれるパスワードを入力してください。",
+        "ERR_COM_0009": "数字が含まれるパスワードを入力してください。",
+        "ERR_COM_0010": "記号が含まれるパスワードを入力してください。",
+        "ERR_VAL_0001_PASSWORD": "「現在のパスワード」 は必須項目です。入力してください。",
+        "ERR_VAL_0001_NEW_PASSWORD": "「新しいパスワード」 は必須項目です。入力してください。",
+        "ERR_VAL_0001_PASSWORDCONFIRM": "「新しいパスワード(再入力)」 は必須項目です。入力してください。",
+        "ERR_VAL_0005_PASSWORD": "「新しいパスワード」は64文字以内で入力して下さい。",
+        "ERR_VAL_0002_PASSWORD": "「新しいパスワード」には半角文字を入力してください。",
+        "ERR_VAL_0003": "「0」には正しいメールアドレスを入力してください。",
+        "ERR_VAL_0004": "「1」は「0」文字以上で入力して下さい",
+        "ERR_VAL_0005": "「1」は「0」文字以内で入力して下さい。",
+        "ERR_VAL_0001_USERID": "「ユーザーID」は必須項目. 入力してください。",
+        "ERR_VAL_0001_MAIL": "「メールアドレス」は必須項目. 入力してください。",
+        "ERR_VAL_0001_NAME": "「ユーザー名」は必須項目. 入力してください。",
+        "ERR_VAL_0002_USERID": "「ユーザーID」には半角文字を入力してください。",
+        "ERR_VAL_0002_MAIL": "「メールアドレス」には半角文字を入力してください。",
+        "ERR_VAL_0005_USERID": "「ユーザーID」は128文字以内で入力して下さい。",
+        "ERR_VAL_0005_MAIL": "「メールアドレス」は128文字以内で入力して下さい。",
+	"ERR_VAL_0001_COMMENT": "「コメント」 は必須項目です。入力してください。",
+        "ERR_VAL_0005_COMMENT": "「コメント」は1000文字以内で入力して下さい。",
+        "ERR_VAL_0005_NAME": "「ユーザー名」は128文字以内で入力して下さい。",
+        "ERR_MEM_0003_FIRST": "",
+        "ERR_MEM_0003_LAST": "は存在しないため、ダウンロードできません。",
+        "ERR_MEM_0005_FIRST": "",
+        "ERR_MEM_0005_LAST": "は存在しないため、却下できません。",
+        "ERR_MEM_0006_FIRST": "",
+        "ERR_MEM_0006_LAST": " は存在しないため、承認できません。",
+        "ERR_MEM_0007_FIRST": "",
+        "ERR_MEM_0007_LAST": "は却下できません。「ダウンロード」または「詳細内容確認」をしてください。",
+        "ERR_MEM_0008_FIRST": "",
+        "ERR_MEM_0008_LAST": "は承認できません。「ダウンロード」または「詳細内容確認」をしてください。",
+        "ERR_MEM_0009": "指定されたファイル拡張子は禁止されています。 拡張子：",
+        "ERR_MEM_0010": "サイズが大きすぎます。",
+        "ERR_COM_0011": "ユーザーの現在のパスワードを入力してください。",
+        "ERR_MEM_0013": "指定されたファイルはプレビューできません。",
+        "ERR_MEM_0014_FIRST": "",
+        "ERR_MEM_0014_LAST": "は却下できません。「ダウンロード」をしてください。",
+        "ERR_MEM_0015_FIRST": "",
+        "ERR_MEM_0015_LAST": "は却下できません。「詳細内容確認」をしてください。",
+        "ERR_MEM_0016_FIRST": "",
+        "ERR_MEM_0016_LAST": "は承認できません。「ダウンロード」をしてください。",
+        "ERR_MEM_0017_FIRST": "",
+        "ERR_MEM_0017_LAST": "は承認できません。「詳細内容確認」をしてください。",
+        "ERR_MEM_0018": "ファイルは処理されました。最新一覧を更新するにはページをリロードしてください。"
+    },
+    "MESSAGE": {
+        "MSG_COM_0001": "ユーザー情報を更新しました。",
+        "MSG_COM_0002": "ファイルが存在しません。",
+        "MSG_MEM_0001": "該当するデータがありません。",
+        "MSG_MEM_0002": "削除しますか？",
+        "MSG_MEM_0003": "指定したファイルを削除しました。",
+        "MSG_MEM_0004": "ファイルを選択してください。",
+        "MSG_MEM_0005": "申請コメントを入力してください。",
+        "MSG_MEM_0006": "アップロードしたファイルにウイルスが感染している恐れがあります。",
+        "MSG_MEM_0007": "アップロードしたファイルはウイルス検査できません。",
+        "MSG_MEM_0012_FIRST": "ファイル{",
+        "MSG_MEM_0012_END": "}が重複しています。"
+    }
+}

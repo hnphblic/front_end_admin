@@ -1,0 +1,239 @@
+{
+    "COMMON": {
+        "MODEMS": "MODEMS",
+        "DELETE": "Delete",
+        "CONNECT":"Connect",
+        "LOADPHONE":"Load Phone",
+        "BUTTON_BACK": "Back",
+        "SEARCH": "Search",
+        "BUTTON_CANCEL": "Cancel",
+        "BUTTON_NEXT": "Next",
+        "BUTTON_MODIFY": "Modify",
+        "BUTTON_DELETE": "Delete",
+        "BUTTON_OK": "Ok",
+        "CONTENT_LINK_CONTACT_ADMIN_HEAD": "If you forgot your email, ",
+        "CONTENT_LINK_CONTACT_ADMIN_SECOND": "please contact the administrator of this service.",
+        "CONTENT_LINK_CONTACT_ADMIN_THIRD": "Click ",
+        "LINK_CONTACT_ADMIN": "here",
+        "CONTENT_LINK_CONTACT_ADMIN_LAST": " to contact the service administrator.",
+        "SELECT_ALL": "Select all",
+        "BUTTON_SEARCH": "Search",
+        "TIME_UPLOAD": "Registration Date",
+        "STATUS": "Status",
+        "COMMENT_APP": "Application Comment",
+        "DRAG":"Drag files here.",
+        "INPUT_COMMENT": "Input comment for approval application"
+    },
+    "MODEM": {
+        "ID": "ID",
+        "Index": "Index",
+        "Port":"Port",
+        "Status":"Status",
+        "Phone": "Phone",
+        "Index Simbank": "Index Simbank",
+        "Info": "Info"
+    },
+    "SYSTEM_ERROR": {
+        "TITLE": "Error",
+        "CONTENT": "Access may be concentrated. Please wait for a while before accessing. \nThe browser's <Back> button may have been clicked. Do not use the <Back> button.",
+        "BACK_MAIN": "Main"
+    },
+    "LOGIN": {
+        "LINK": "Forgot your password?",
+        "ID": "Username",
+        "PASSWORD": "Password",
+        "BUTTON": "Login"
+    },
+    "HISTORY":{
+        "HISTORY": "Operation History",
+        "DATE":"Date and Time",
+        "IF": "I/F",
+        "ACTION":"Operation",
+        "UPLOADER":"Operator",
+        "RECIEVER":"User ID"
+    },
+    "HISTORY_UPLOAD": {
+        "TITLE": "Uploaded File List"
+    },
+    "UPLOAD": {
+        "UPLOAD_ARROW":"↑Upload",
+        "CLOSE":"Close",
+        "ALL_FILE":"All files (*.*)",
+        "OPEN":"Open"
+    },
+    "RESET_PASSWORD": {
+        "TITLE": "Forgot your password?",
+        "CONTENT_FIRST": "Enter your email and click on the 'Submit' button.",
+        "CONTENT_SECOND": "Password will be reissued and notified by email.",
+        "CONTENT_LAST": "However, the e-mail address is limited to the address registered in this system.",
+        "WARNING": "is a required item",
+        "USER_ID": "User ID: ",
+        "MAIL": "E-mail Address: ",
+        "BUTTON_SEND": "Submit"
+    },
+    "COMPLETE_RESET_PASSWORD": {
+        "TITLE": "The password has been reissued",
+        "CONTENT": "The password has been reissued and sent by email.",
+        "LINK": "Back to the login screen."
+    },
+    "CHANGE_PASSWORD": {
+        "TITLE": "Please enter a new password and click <Next> button.",
+        "WARNING_FIRST": "is a required item",
+        "NEW_PASSWORD": "New Password:",
+        "RE_ENTER": "(Retype)",
+        "WARNING_SECOND": "※The password strength requirements are as follows: a password length can be a minimum of ",
+        "WARNING_THIRD": " to maximum of 64",
+        "WARNING_LAST": " characters.",
+        "PASSWORD_CURRENT": "Current password:"
+    },
+    "CHANGE_PASSWORD_CONFIRM": {
+        "TITLE": "Password change confirmation",
+        "CONTENT": "Do you want to change to the next recommended password?"
+    },
+    "LOGOUT": {
+        "TITLE": "Logged out.",
+        "LINK": "Back to the login screen."
+    },
+    "TIMEOUT": {
+        "TITLE": "Timed out.",
+        "LINK": "Back to the login screen."
+    },
+    "HEADER": {
+        "BUTTON_MAIN": "Main",
+        "BUTTON_DETAIL_USER": "My Account",
+        "BUTTON_HISTORY_UPLOAD": "Uploaded File List",
+        "BUTTON_HISTOTY_APP": "Operation History",
+        "BUTTON_LOGOUT": "Logout",
+        "BUTTON_PLEASE_APPROVE": "Apply for approval"
+    },
+    "FORWARD_FILE": {
+        "TITLE_FIRST": "Do you want to transfer files uploaded by ",
+        "TITLE_SECOND": " to ",
+        "TITLE_LAST": "?",
+        "BUTTON_FORWARD": "Transfer"
+    },
+    "COMMENT_REJECT_FILE_APPROVE": {
+        "TITLE": "Reject file transfer.",
+        "BUTTON_REJECT": "Rejected"
+    },
+    "COMMENT_PLEASE_APPROVE": {
+        "TITLE": "Upload",
+        "FILE": "files"
+    },
+    "STATUS_UPLOAD": {
+        "UPLOAD": "Uploading file",
+        "CHECK_VIRUS": "Virus check is in progress"
+    },
+    "DETAIL_USER": {
+        "CONTENT_LINK_CHANGE_PASS_HEAD": "You can change the password from ",
+        "LINK_CHANGE_PASS": "here",
+        "CONTENT_LINK_CHANGE_PASS_LAST": ".",
+        "REGISTER_USER_INFO": "User Information",
+        "ROLE": "Role: ",
+        "USER_ID": "User ID: ",
+        "NAME": "User Name: ",
+        "MAIL": "E-mail Address: ",
+        "PASSWORD_EXPIRE": "Password Expire Date: ",
+        "ACCOUNT_EXPIRE": "Account Expire Date: ",
+        "DISK_USAGE_STATUS": "Disk Usage",
+        "QUOTE_MAX": "Max Capacity: ",
+        "CURRENT_USAGE": "Current Usage: ",
+        "USE_RATE": "Rate: ",
+        "WARNING_INPUT_LENGTH": "Max. 128 characters.",
+        "USER_SETTING": "User Settings",
+        "CONTENT_LINK_CONTACT_ADMIN_HEAD": "You can send an e-mail to the service administrator from ",
+        "LINK_CONTACT_ADMIN": "here",
+        "CONTENT_LINK_CONTACT_ADMIN_LAST": "."
+    },
+    "LIST_APPLY_APPROVAL": {
+        "TITLE_LV2": "Approval Application Management",
+        "BUTTON_REJECTION": "Rejected",
+        "BUTTON_APPROVAL": "Approved",
+        "STATUS": "Status",
+        "REGISTER_PERSON": "Register"
+    },
+    "PAGING": {
+        "TOTAL": "Total：",
+        "RECORD": "Item",
+        "PAGE": "Page",
+        "LINK_PREVIOUS": "Previous",
+        "LINK_NEXT": "Next"
+    },
+    "ERROR_UPLOAD": {
+        "TITLE": "The following file could not be uploaded",
+        "REASON": "Reason"
+    },
+    "CONTINUES_UPLOAD":{
+        "FIRST_TITLE": "Uploaded ",
+        "TITLE": " file(s)",
+        "TITLE_INTRO": "Please wait forecurity inspection and approval to be completed.",
+        "CHECKBOX": "Receive notification of inspection,  approval completion",
+        "BTN_END": "Finish",
+        "BTN_CONTINUES": "Continue to operate"
+    },
+    "ERROR": {
+        "ERR_COM_0001": "Invalid username or mail address.",
+        "ERR_COM_0002": "Password send error! Please contact system administrator.",
+        "ERR_COM_0003": "Password strength is insufficient.",
+        "ERR_COM_0004": "Invalid password.",
+        "ERR_COM_0005": "Re-typed password did not match new password.",
+        "ERR_COM_0006": "Invalid username or password.",
+        "ERR_COM_0008": "Please enter a password that contains upper and lower case letters.",
+        "ERR_COM_0009": "Please enter a password that contains numbers.",
+        "ERR_COM_0010": "Please enter a password that contains the symbol.",
+        "ERR_VAL_0001_PASSWORD": "Input error. Current Pasword is a required item.",
+        "ERR_VAL_0001_NEW_PASSWORD": "New password is a required field. Please enter.",
+        "ERR_VAL_0001_PASSWORDCONFIRM": "Input error. Pasword (confirm) is a required item.",
+        "ERR_VAL_0005_PASSWORD": "Input error. Please enter within 64 letters.",
+        "ERR_VAL_0002_PASSWORD": "Input error. Invalid character in new password",
+        "ERR_VAL_0003": "Format error. {0} is mail address.",
+        "ERR_VAL_0004": "Input error. Please enter at least {0} letters.",
+        "ERR_VAL_0005": "Input error. Please enter within {0} letters.",
+        "ERR_VAL_0001_USERID": "Input error. User Id is a required item.",
+        "ERR_VAL_0001_MAIL": "Input error. Mail address is a required item.",
+        "ERR_VAL_0001_NAME": "Input error. Name address is a required item.",
+        "ERR_VAL_0002_USERID": "Input error. Invalid character in user id",
+        "ERR_VAL_0002_MAIL": "Input error. Invalid character in mail address",
+        "ERR_VAL_0005_USERID": "Input error. Please enter within 128 letters in user id.",
+        "ERR_VAL_0005_MAIL": "Input error. Please enter within 128 letters in mail address.",
+        "ERR_VAL_0001_COMMENT": "Input error. Comment is a required item.",
+	    "ERR_VAL_0005_COMMENT": "Input error. Please enter within 1000 letters in comment.",
+        "ERR_VAL_0005_NAME": "Input error. Please enter within 128 letters in name.",
+        "ERR_MEM_0003_FIRST": "Download errror because the file ",
+        "ERR_MEM_0003_LAST": " was deleted or does not exist.",
+        "ERR_MEM_0005_FIRST": "Reject errror because the file ",
+        "ERR_MEM_0005_LAST": " was deleted or does not exist.",
+        "ERR_MEM_0006_FIRST": "Approve errror because the file ",
+        "ERR_MEM_0006_LAST": " was deleted or does not exist.",
+        "ERR_MEM_0007_FIRST": "You have to download or review to reject the file ",
+        "ERR_MEM_0007_LAST": "",
+        "ERR_MEM_0008_FIRST": "You have to download or review to approve the file ",
+        "ERR_MEM_0008_LAST": "",
+        "ERR_MEM_0009": "The specified file extension is prohibited. Extension : ",
+        "ERR_MEM_0010": "Files size too large.",
+        "ERR_COM_0011": "Please enter the current password of the user.",
+        "ERR_MEM_0013": "This file cannot be previewed.",
+        "ERR_MEM_0014_FIRST": "You have to download to reject the file ",
+        "ERR_MEM_0014_LAST": "",
+        "ERR_MEM_0015_FIRST": "You have to preview to reject the file ",
+        "ERR_MEM_0015_LAST": "",
+        "ERR_MEM_0016_FIRST": "You have to download to approve the file ",
+        "ERR_MEM_0016_LAST": "",
+        "ERR_MEM_0017_FIRST": "You have to preview to approve the file ",
+        "ERR_MEM_0017_LAST": "",
+        "ERR_MEM_0018": "The files were processed. Please reload the page to get the latest list."
+    },
+    "MESSAGE": {
+        "MSG_COM_0001": "Your user information is updated.",
+        "MSG_COM_0002": "Modem not exist.",
+        "MSG_MEM_0001": "No-record found.",
+        "MSG_MEM_0002": "Would you like to delete this file?",
+        "MSG_MEM_0003": "The file was deleted.",
+        "MSG_MEM_0004": "Please add file to upload.",
+        "MSG_MEM_0005": "Input comment to approve.",
+        "MSG_MEM_0006": "The uploaded file is virus-infected.",
+        "MSG_MEM_0007": "The uploaded file is not virus scanned.",
+        "MSG_MEM_0012_FIRST": "File ",
+        "MSG_MEM_0012_END": " has been duplicated."
+    }
+}

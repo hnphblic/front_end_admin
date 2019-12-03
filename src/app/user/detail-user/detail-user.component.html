@@ -1,0 +1,100 @@
+<div class="com0005">
+    <div class="container-fluid">
+        <app-header></app-header>
+        <div class="container-fluid-com0005">
+            <div *ngIf="message != ''">
+                <p class="message" translate>{{message}}</p>
+            </div>
+            <div class="box-msg" *ngFor="let error of listError">
+                {{error | translate}}
+            </div>
+            <div *ngIf="disp_pwchange_link" class="text-change">
+                {{'DETAIL_USER.CONTENT_LINK_CHANGE_PASS_HEAD' | translate}}<a
+                    href="/change-password">{{'DETAIL_USER.LINK_CHANGE_PASS' | translate}}</a>{{'DETAIL_USER.CONTENT_LINK_CHANGE_PASS_LAST' | translate}}
+            </div>
+            <div class="list-box">
+                <h3 class="title">{{'DETAIL_USER.REGISTER_USER_INFO' | translate}}</h3>
+                <ul class="list-item">
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.ROLE' | translate}}</label>
+                        <div class="data-col">{{detailUser.role}}</div>
+                    </li>
+                    <li class="cx row-two">
+                        <label class="fl">{{'DETAIL_USER.USER_ID' | translate}}</label>
+                        <ol class="data-col">
+                            <li class="cx">
+                                <div class="fl">インサイドユーザーID</div>
+                                <span>{{detailUser.username_inside}}</span>
+                            </li>
+                            <li>
+                                <div class="fl">アウトサイドユーザーID</div>
+                                <span>{{detailUser.username_outside}}</span>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.NAME' | translate}}</label>
+                        <div class="data-col"><span class="text">{{detailUser.name}}</span></div>
+                    </li>
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.MAIL' | translate}}</label>
+                        <div class="data-col"><span class="text">{{detailUser.email}}</span></div>
+                    </li>
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.PASSWORD_EXPIRE' | translate}}</label>
+                        <div class="data-col">{{detailUser.password_expire}}</div>
+                    </li>
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.ACCOUNT_EXPIRE' | translate}}</label>
+                        <div class="data-col">{{detailUser.user_expire}}</div>
+                    </li>
+                </ul>
+                <h3 class="title">{{'DETAIL_USER.DISK_USAGE_STATUS' | translate}}</h3>
+                <ul class="list-item">
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.QUOTE_MAX' | translate}}</label>
+                        <div class="data-col">{{detailUser.quota}}</div>
+                    </li>
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.CURRENT_USAGE' | translate}}</label>
+                        <div class="data-col">{{detailUser.currentUsage}}</div>
+                    </li>
+                    <li class="cx">
+                        <label class="fl">{{'DETAIL_USER.USE_RATE' | translate}}</label>
+                        <div class="data-col">{{detailUser.useRate}} %</div>
+                    </li>
+                </ul>
+                <div *ngIf="disp_edit_profile">
+                    <h3 class="title">{{'DETAIL_USER.USER_SETTING' | translate}}</h3>
+                    <ul class="list-item form-input">
+                        <li class="cx row-two">
+                            <label class="fl">{{'DETAIL_USER.NAME' | translate}}</label>
+                            <div class="data-col data-col__input">
+                                <input type="text" name="" value="{{detailUser.name}}" [(ngModel)]="userName">
+                                <p class="warning">※{{'DETAIL_USER.WARNING_INPUT_LENGTH' | translate}}</p>
+                            </div>
+                        </li>
+                        <li class="cx row-two">
+                            <label class="fl">{{'DETAIL_USER.MAIL' | translate}}</label>
+                            <div class="data-col data-col__input">
+                                <input type="text" name="" value="{{detailUser.email}}" [(ngModel)]="userMail">
+                                <p class="warning">※{{'DETAIL_USER.WARNING_INPUT_LENGTH' | translate}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button *ngIf="disp_edit_profile" class="btn btn-native"
+                    (click)="updateUser()">{{'COMMON.BUTTON_MODIFY' | translate}}</button>
+            </div>
+            <p class="text-support">
+                {{'DETAIL_USER.CONTENT_LINK_CONTACT_ADMIN_HEAD' | translate}}
+                <a (click)="sendMailToService()">{{'DETAIL_USER.LINK_CONTACT_ADMIN' | translate}}</a>
+                {{'DETAIL_USER.CONTENT_LINK_CONTACT_ADMIN_LAST' | translate}}
+            </p>
+        </div>
+        <app-footer></app-footer>
+    </div>
+</div>

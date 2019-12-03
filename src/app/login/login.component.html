@@ -1,0 +1,27 @@
+  <div class="logo">
+        <img src="/assets/images/logo.png" alt="logo">
+  </div>
+  <div class="box-login" [style.background-color]="color">
+        <p class="error" *ngIf="showError" translate>{{messageError}}</p>
+        <form (keyup.enter)="login()">
+                <ul class="form">
+                        <li class="cx">
+                                <label>
+                                        <input type="text" [(ngModel)]="id" name="id"
+                                                placeholder="{{'LOGIN.ID' | translate}}" autofocus #userName>
+                                </label>
+                        </li>
+                        <li class="cx">
+                                <label>
+                                        <input type="password" [(ngModel)]="password" name="password" autocomplete="off"
+                                                placeholder="{{'LOGIN.PASSWORD' | translate}}">
+                                </label>
+                        </li>
+                </ul>
+        </form>
+        <div class="btn-group center"><button class="btn btn-df"
+                        (click)="login()">{{'LOGIN.BUTTON' | translate}}</button>
+        </div>
+        <p class="login-mar-none"><a href="/reset-password">{{'LOGIN.LINK' | translate}}</a>
+        </p>
+</div>
