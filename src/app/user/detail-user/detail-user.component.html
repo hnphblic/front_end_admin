@@ -19,19 +19,10 @@
                         <label class="fl">{{'DETAIL_USER.ROLE' | translate}}</label>
                         <div class="data-col">{{detailUser.role}}</div>
                     </li>
-                    <li class="cx row-two">
-                        <label class="fl">{{'DETAIL_USER.USER_ID' | translate}}</label>
-                        <ol class="data-col">
                             <li class="cx">
-                                <div class="fl">インサイドユーザーID</div>
-                                <span>{{detailUser.username_inside}}</span>
+                                    <label class="fl">{{'DETAIL_USER.USER_ID' | translate}}</label>
+                                <div class="data-col"><span class="text">{{detailUser.username}}</span></div>
                             </li>
-                            <li>
-                                <div class="fl">アウトサイドユーザーID</div>
-                                <span>{{detailUser.username_outside}}</span>
-                            </li>
-                        </ol>
-                    </li>
                     <li class="cx">
                         <label class="fl">{{'DETAIL_USER.NAME' | translate}}</label>
                         <div class="data-col"><span class="text">{{detailUser.name}}</span></div>
@@ -47,21 +38,6 @@
                     <li class="cx">
                         <label class="fl">{{'DETAIL_USER.ACCOUNT_EXPIRE' | translate}}</label>
                         <div class="data-col">{{detailUser.user_expire}}</div>
-                    </li>
-                </ul>
-                <h3 class="title">{{'DETAIL_USER.DISK_USAGE_STATUS' | translate}}</h3>
-                <ul class="list-item">
-                    <li class="cx">
-                        <label class="fl">{{'DETAIL_USER.QUOTE_MAX' | translate}}</label>
-                        <div class="data-col">{{detailUser.quota}}</div>
-                    </li>
-                    <li class="cx">
-                        <label class="fl">{{'DETAIL_USER.CURRENT_USAGE' | translate}}</label>
-                        <div class="data-col">{{detailUser.currentUsage}}</div>
-                    </li>
-                    <li class="cx">
-                        <label class="fl">{{'DETAIL_USER.USE_RATE' | translate}}</label>
-                        <div class="data-col">{{detailUser.useRate}} %</div>
                     </li>
                 </ul>
                 <div *ngIf="disp_edit_profile">

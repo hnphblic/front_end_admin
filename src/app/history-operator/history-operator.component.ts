@@ -83,23 +83,26 @@ export class HistoryOperatorComponent implements OnInit {
     this.listDataDefault = [];
     this.listDataTemp = [];
     this.historyService.getHistoryData(encodeURI(this.valueSearch.trim())).subscribe(data => {
-      //set file for listDataDefault
-      data.extra.history.forEach(element => {
-        //set up file
-        this.listDataDefault.push(this.setUpHistoryOperator(element));
-      });
-      this.spinner.hide();
-      if (this.listDataDefault.length == 0) {
+      console.log(data.length);
+      if (data.length == 0) {
         this.message = Constants.MSG_MEM_0001;
-        this.showRecord();
+        this.spinner.hide();
         return;
       } else {
         this.message = "";
+         //set file for listDataDefault
+        data.extra.history.forEach(element => {
+          //set up file
+          this.listDataDefault.push(this.setUpHistoryOperator(element));
+        });
         // clone listrecord to listDataTemp
         this.listDataTemp = [...this.listDataDefault];
         // sort data default
         this.sortData(this.fieldSort);
       }
+      
+      this.showRecord();
+      this.spinner.hide();
     }, () => {
       this.spinner.hide();
       this.router.navigate([Constants.LINK_SYSTEM_ERROR]);

@@ -339,7 +339,6 @@ header {
 }
 
 .user-infor {
-    background: url(./assets/images/glyphicons.png) 0 0 no-repeat;
     padding-left: 25px;
     float: left;
     margin: 4px 15px 0 0;
@@ -817,7 +816,6 @@ footer hr {
 }
 
 .ic-search {
-  background: url(./assets/images/glyphicons.png) 0 -37px no-repeat;
   width: 17px;
   height: 17px;
   display: inline-block;
@@ -836,26 +834,6 @@ footer hr {
     height: 24px;
     cursor: pointer;
     vertical-align: middle
-}
-
-.ic-download {
-  background: url(./assets/images/glyphicons.png) -234px -38px no-repeat
-}
-
-.ic-list {
-    background: url(./assets/images/glyphicons.png) -33px -39px no-repeat
-}
-
-.ic-del {
-    background: url(./assets/images/glyphicons.png) -71px -39px no-repeat
-}
-
-.ic-grid {
-    background: url(./assets/images/glyphicons.png) -114px -39px no-repeat
-}
-
-.ic-view {
-  background: url(./assets/images/glyphicons.png) -307px -31px no-repeat
 }
 
 .form-search .btn-df,
@@ -1013,19 +991,7 @@ td .check-style {
   line-height: 30px
 }
 
-.myupload {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 99;
-  width: 100%
-  
-}
-
 .ic-local-file {
-  background: url(./assets/images/glyphicons.png) -154px -32px no-repeat;
   background-color: #ccc;
   display: inline-block;
   width: 35px;
@@ -1044,31 +1010,6 @@ td .check-style {
 
 .list-status li:last-child {
   margin-right: 0
-}
-
-.mem0021 .search .btn-df {
-  position: absolute;
-  width: 93px;
-  min-width: 0;
-  height: 32px;
-  line-height: 32px;
-  margin-left: 40px
-}
-
-.mem0021 .checkbox-gray {
-  border: 2px solid	#808080
-}
-
-.mem0021 .highlight {
-  background: #ffcccc
-}
-
-.mem0021 .ic-download {
-  background-position: -234px -39px
-}
-
-.mem0021 .info-text .text-eliss {
-  max-width: 400px
 }
 
 .row-input {
@@ -1134,74 +1075,12 @@ input:checked ~ .checkmark:after {
 header .navbar-toggler:hover>.sub-menu {
   display: block
 }
-
-.mem0011 .content p {
-  margin-left: 0
-}
-
-.mem0011 .scroll {
-  max-height: 500px;
-  overflow: auto
-}
-
-.mem0011 table th:first-child,
-.mem0011 table td:first-child {
-  width: 55px;
-  text-align: center
-}
-
-.mem0011 table th:nth-child(2),
-.mem0011 table td:nth-child(2) {
-  width: 60px;
-  text-align: center
-}
-
-.mem0011 table th:nth-child(3) span,
-.mem0011 table th:nth-child(4) span {
-  display: inline-block;
-  cursor: pointer
-}
-
-.mem0011 .box-page {
-  width: 680px
-}
-
 .area-upload {
   width: 100%;
   height: 235px;
   border: 1px dashed #d7d7d7;
   background: #f0f0f0;
   margin-bottom: 20px
-}
-
-.mem0011_option-file .btn-group {
-  text-align: right
-}
-
-.mem0011 .btn {
-    background : linear-gradient(#fff, #eee);
-    border: 1px solid #666;
-    border-radius: 3px;
-    text-align: center;
-    min-width: 155px;
-    font-size: 16px;
-    padding: 0 20px;
-    height: 32px
-}
-.mem0011 .btn:hover {
-    background : #06c;
-    color: #fff;
-    border-color: #02468a
-}
-
-.mem0011 .btn-upload {
-  border-color: #f60;
-  color: #f60;
-}
-
-.mem0011 .btn-group {
-  margin: 20px auto 30px;
-  width: 100%;
 }
 
 .mag-r5 {
@@ -1536,102 +1415,6 @@ span {
   font-size: 16px
 }
 
-/* mem0014 list error upload */
-
-.mem0014 {
-  overflow: auto
-}
-
-.mem0014 table,
-.mem0014 tr,
-.mem0014 td {
-  border: none;
-  background-color: #fff
-}
-
-.head-table span {
-  font-weight: 600
-}
-
-.mem0014 tr td:first-child {
-  width: 50%
-}
-
-.mem0014 p {
-    font-size: 13px;
-    font-weight: 600;
-    padding-top: 10px;
-    border-top: 1px solid #999;
-    margin: 10px 0
-}
-
-.mem0014 .wrapper {
-  border: 1px solid #999;
-  background-color: #fff;
-  height: 180px;
-  overflow-y: scroll
-}
-
-.mem0014 table {
-  width: 100%;
-}
-
-.mem0014 tr {
-  height: 25px;
-}
-
-.mem0014 button {
-  margin: 15px 0 0;
-  float: right;
-  font-weight: 600
-}
-
-/* mem0015 continue action (after uplaod file) */
-
-.mem0015 {
-  padding: 20px;
-  height: 280px;
-  text-align: center
-}
-
-.mem0015.screen {
-  border: none;
-  margin: 0
-}
-
-.mem0015 .btn-group,
-.mem0015 .btn-group .btn-cancel {
-  width: auto
-}
-
-.mem0015 img {
-   width: 60;
-   height: 70px
-}
-
-.mem0015 p {
-   font-size: 14px
-}
-
-.mem0015 .btn-native  {
- margin-right: 20px;
- width: auto
-}
-
-.btn-finish {
-  color: #999
-}
-
-.btn-finish:hover {
-  background-color: #666
-}
-
-.container {
-  position: relative;
-  display: block;
-  user-select: none
-}
-
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;
@@ -1685,132 +1468,6 @@ span {
   transform: rotate(45deg)
 }
 
-/* mem0023- comment reject comment */
-textarea {
-  padding: 10px!important;
-  font-size: 14px;
-  resize: none
-}
-
-.mem0023 {
-  overflow: auto
-}
-
-.mem0023 .content,
-.mem0012 .content {
-  margin-top: 10px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 200px;
-  background-color: #fff;
-  padding: 0;
-  overflow: auto
-}
-
-.mem0023 .btn-group,
-.mem0012 .btn-group {
-  margin-top: 20px;
-  margin-bottom: 0
-}
-
-.mem0023 .btn-group {
-  display: flex;
-  width: 100%;
-  justify-content: center
-}
-
-.mem0023 .btn-group .btn-cancel {
-  margin-right: 20px
-}
-
-/* mem0012 comment please approval */
-
-.mem0012 .btn-group {
-  display: flex;
-  width: 100%;
-  justify-content: space-between
-}
-
-.mem0012.screen,
-.com0007.screen,
-.mem0023.screen,
-.mem0013.screen,
-.mem0031.screen {
-  margin: 0;
-  border: none
-}
-
-.mem0012 .warning {
-  height: 24px;
-  margin: 10px 0 0
-}
-
-/* mem0031 forward download */
-.mem0031 h3,
-.mem0031 h3 span {
-  border: none;
-  display: inline-table;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px
-}
-
-.mem0031 h3 span {
-  margin-bottom: 0
-}
-
-.mem0031 .btn-cancel {
-  margin-right: 40px
-}
-
-.mem0031 .btn-group {
-  margin: 20px;
-  text-align: center;
-  width: 100%
-}
-
-.mem0031 {
-  width: 545px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px
-}
-
-.mem0031 img:hover {
-  cursor: auto
-}
-
-/* mem0013 status upload */
-
-.mem0013 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  width: 405px
-}
-
-.mem0013 p {
-  font-size: 14px
-}
-
-.mem0013 img {
-  width: 70px;
-  height: 65px
-}
-
-.virus {
-  display: none
-}
-
-.cx:after,
-.navbar-toggler:after {
-  display: block;
-  visibility: hidden
-}
-
 
 /* dialog*/
 .dialog-delete {
@@ -1854,214 +1511,4 @@ textarea {
 
 .dialog-delete-mem0016 p {
   font-size: 15px
-}
-
-.mem0016 .btn-delete {
-  border: none;
-  outline: 0;
-  background: #f0f0f0;
-  text-align: right;
-  min-width: auto;
-  padding: 0px
-}
-
-.mat-dialog-container {
-  padding: 0!important
-}
-
-.mem0022 .text-eliss {
-  max-width: 1100px;
-  display: block
-}
-
-.text-eliss {
-  max-width: 300px;
-  display: table-cell;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer
-}
-
-.mem0021 .text-eliss {
-  max-width: 200px
-}
-
-.com0008 .text-eliss {
-  max-width: 140px
-}
-
-/*-------------mem0032----------------------------*/
-
-.mem0021 table th,
-.mem0021 table th select,
-.mem0032_show-list table th,
-.mem0011 table th span{
-    text-decoration: underline
-}
-
-.mem0021 table th:last-child,
-.mem0032_show-list table th:last-child {
-    text-decoration: none
-}
-
-.mem0032_show-list table th:nth-child(3) p,
-.mem0032_show-list table th:nth-child(4) p {
-    display: inline-block;
-    cursor: pointer;
-    text-decoration: underline
-}
-
-.mem0021 table td.pad0 {
-    padding: 0
-}
-
-.mem0032 .title-page {
-  text-align: center
-}
-
-.mem0032_show-list table th:first-child,
-.mem0032_show-list table th:nth-child(2) {
-  width: 40px
-}
-
-.mem0032_show-list table th:nth-child(4) {
-  width: 120px
-}
-
-.mem0032_show-list table td:last-child {
-  width: 420px;
-  padding-top: 0;
-  padding-bottom: 0
-}
-
-.mem0032_show-list .table-status {
-  display: table;
-  height: 100%
-}
-
-.mem0032_show-list .table-status li {
-  display: table-cell;
-  border-right: 1px dashed #ccc;
-  vertical-align: middle;
-  padding: 10px
-}
-
-.mem0032_show-list .table-status li:first-child {
-  padding-left: 0
-}
-
-.mem0032_show-list .table-status li:last-child {
-  padding-right: 0;
-  border: none
-}
-
-.mem0032_show-list .table-status li figure {
-  display: inline-block;
-  width: 33px;
-  height: 28px
-}
-
-.mem0032 .scroll {
-  max-height: 500px;
-  overflow: auto
-}
-
-.mem0021 .info-detail {
-  background: #d9edf7
-}
-
-.mem0021 .main-contents ul li {
-  display: inline-block
-}
-
-.mem0021 .info-detail .table {
-  display: table;
-  width: 100%
-}
-
-.mem0021 .info-detail .table figure,
-.mem0021 .info-detail .table .ultil-icon {
-  display: table-cell;
-  vertical-align: middle
-}
-
-.mem0021 .info-detail .table figure {
-  width: 120px
-}
-
-.mem0021 .info-detail .table .ultil-icon {
-  width: 305px
-}
-
-.mem0021 .main-contents p {
-  margin-left: 0
-}
-
-/* mem0022 */
-
-.mem0022 .content {
-  margin: 0 30px 20px;
-  padding: 20px;
-  border: 1px solid #666;
-  max-height: 70vh;
-  height: 70vh;
-  display: block;
-  overflow: auto
-}
-
-.mem0022 h3 {
-  border: none;
-  margin: 20px
-}
-
-.mem0022 .box-msg {
-  background: none
-}
-
-.comment {
-  cursor: pointer
-}
-
-.mem0016 th {
-text-decoration: underline;
-cursor: pointer
-}
-.mem0016 th:nth-child(6),
-.mem0016 th:last-child {
-text-decoration: none
-}
-.mem0016 th:nth-child(1),
-.mem0016 th:nth-child(2),
-.mem0016 th:nth-child(6),
-.mem0016 th:last-child {
-    cursor: text
-}
-
-.comment:hover>.showFull {
-  display: block
-}
-
-.showFull {
-  display: none;
-  position: absolute;
-  max-width: 320px;
-  max-height: 220px;
-  overflow: auto;
-  padding: 5px;
-  background: lightblue;
-  border: 1px gray solid;
-  z-index: 2
-}
-.mem0021 th span {
-  cursor: pointer
-}
-
-.mem0021 th:first-child,
-.mem0021 th:last-child {
-  cursor: text;
-}
-
-.label-sort {
-  cursor: pointer
 }

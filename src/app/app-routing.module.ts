@@ -6,12 +6,9 @@ import { ChangePasswordComponent } from './password/change-password/change-passw
 import { ResetPasswordComponent } from './password/reset-password/reset-password.component';
 import { MainComponent } from './main/main.component';
 import { LogoutComponent } from './logout/logout.component';
-import { DownloadComponent } from './download/list-file-download.component';
 import { AuthGuardService as AuthGuard} from './shared/interceptor/auth-guard.servicce';
 import { DetailUserComponent } from './user/detail-user/detail-user.component';
-import { ApproveComponent } from './approve/approve.component';
 import { ComplateResetPasswordComponent } from './password/complate-reset-password/complate-reset-password.component';
-import { ForwardDownloadComponent } from './download/forward-download/forward-download.component';
 import { TimeOutComponent } from './time-out/time-out.component';
 import { SystemErrorComponent } from './system-error/system-error.component';
 import { HistoryOperatorComponent } from './history-operator/history-operator.component';
@@ -25,12 +22,8 @@ const routes: Routes = [
   { path: 'timeout', component: TimeOutComponent, canActivate: [AuthGuard]},
   { path: 'main', component: MainComponent, canActivate: [AuthGuard]},
   { path: 'change-password', component: ChangePasswordComponent, canActivate: [AuthGuard]},
-  { path: 'download-file', component: DownloadComponent, canActivate: [AuthGuard] },
   { path: 'detail-user', component: DetailUserComponent,canActivate: [AuthGuard]},
   { path: 'history', component: HistoryOperatorComponent, canActivate: [AuthGuard]},
-  { path: 'list-file-download', component: DownloadComponent, canActivate: [AuthGuard]},
-  { path: 'list-apply-approval', component: ApproveComponent, canActivate: [AuthGuard]},
-  { path: 'forward-download', component: ForwardDownloadComponent,canActivate: [AuthGuard]},
   { path: 'system-error', component: SystemErrorComponent, canActivate: [AuthGuard]}
 ];
 

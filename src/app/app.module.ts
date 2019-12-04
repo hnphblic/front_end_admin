@@ -19,9 +19,7 @@ import { MainModule } from  './main/main.module';
 import { UserModule } from './user/user.module';
 import { LoginModule } from './login/login.module';
 import { HistoryOperatorModule } from './history-operator/history-operator.module';
-import { ListFileDownloadModule } from './download/list-file-download.module';
 import { PasswordModule } from './password/password.module';
-import { ApproveModule } from './approve/approve.module';
 import { Constants } from './shared/constants/constants';
 import { SystemErrorComponent } from './system-error/system-error.component';
 import { LogoutModule } from './logout/logout.module';
@@ -52,8 +50,6 @@ export function createTranslateLoader(http: HttpClient) {
     LoginModule,
     MainModule,
     PasswordModule,
-    ListFileDownloadModule,
-    ApproveModule,
     HistoryOperatorModule,
     ReactiveFormsModule,
     LogoutModule,

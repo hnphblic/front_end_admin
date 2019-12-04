@@ -5,7 +5,6 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 
 import { SystemParamService } from '../shared/system-param/system-param.service';
 import { DetailUserService } from '../user/detail-user/detail-user.service';
-import { ApprovalService } from '../approve/approval.service';
 import { Constants } from '../shared/constants/constants';
 import { TranslateCustomService } from '../shared/translate/translate-custom.service';
 
@@ -43,14 +42,10 @@ export class HeaderComponent implements OnInit {
     private systemService: SystemParamService,
     private detailUserService: DetailUserService,
     private router: Router,
-    private translateService: TranslateCustomService,
-    private approvalService: ApprovalService) {
-    HeaderComponent.dataUpdate.subscribe(res => {
-      if (this.router.url == Constants.LINK_DETAIL_USER) {
-        this.userName = res.toString();
-      } 
-    });
-  }
+    private translateService: TranslateCustomService) 
+    {
+   
+    }
 
   /**
    * toggle menu
@@ -73,7 +68,7 @@ export class HeaderComponent implements OnInit {
       this.showRightHead = true;
       this.getUser();
     }
-    this.fileWaitApprovalTotal = 0;
+
   }
 
   /**
@@ -101,13 +96,6 @@ export class HeaderComponent implements OnInit {
         this.title = decode.is_inside ? (systemParamData.title_network_local_ja + Constants.TITLE_HEADER_JA) : (systemParamData.title_network_external_ja + Constants.TITLE_HEADER_JA);
       }
     }
-  }
-
-  /**
-   * go to [MEM00021] List Apply Approval screen
-   */
-  goToListApplyApproval() {
-    this.router.navigate([Constants.LINK_LIST_APPLY_APPROVAL]);
   }
 
   /**

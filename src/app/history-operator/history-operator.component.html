@@ -4,7 +4,7 @@
         <h1 class="title-page" appNetwork></h1>
         <h2 class="title-lv2">{{'HISTORY.HISTORY' | translate}}</h2>
         <section class="main-contents">
-            <div class="box-ultil cx">
+            <div class="box-ultil cx" *ngIf="listDataTemp.length > 0">
                 <div class="form-search">
                     <div class="row-input fl">
                         <input type="search" [(ngModel)]="valueSearch" name="valueSearch" (focus)="hiden=true" (blur)="hiden=false" />

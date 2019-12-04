@@ -91,8 +91,12 @@ export class LoginComponent implements OnInit {
     } else {
       this.auth.login({ 'username': this.id.trim(), 'password': this.password.trim() }).subscribe((data: any) => {
         if (typeof data == "undefined") {
-          this.route.navigate([Constants.LINK_SYSTEM_ERROR]);
+          this.showError = true;
+          this.id = "";
+          this.password = "";
+          return;
         }
+       
         // put code into try catch cause server can die
         // if login success, decode token and checknavigate, this will forward to reasonable link
         if (data.message === Constants.MESSAGE_SUCCESS) {
