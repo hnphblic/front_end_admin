@@ -41,6 +41,7 @@ export class MainComponent implements OnInit {
     private mainService: MainService,
     private spinner: NgxSpinnerService,
     private modem: ModemService,
+   
     
   ) { }
 
@@ -54,6 +55,7 @@ export class MainComponent implements OnInit {
       const decode = new JwtHelperService().decodeToken(localStorage.getItem(Constants.NAME_TOKEN));
       this.message = Constants.MSG_COM_0002;
       this.loadmodem();
+      
       this.spinner.hide();
     } catch (error) {
       this.spinner.hide();
@@ -106,37 +108,28 @@ export class MainComponent implements OnInit {
    * @param event 
    */
   connect() {
+    this.spinner.show();
     if (this.serials.length == 0) {
       this.message = Constants.MSG_MEM_0001;
       return;
     } else {
-      this.spinner.show();
       this.message = "";
       this.serials.forEach(value => {
           this.modem.loadModem(value.port).subscribe((data: any) => {
             if (typeof data == "undefined") {
               //this.route.navigate([Constants.LINK_SYSTEM_ERROR]);
             }else{
-              this.updateValueSerials(data.extra.modem, 0)
-              console.log(this.serials)
-              console.log(this.serials_tmp)
+              value.status = data.extra.modem.status;
+              value.infor = data.extra.modem.Note;
+              value.phone = data.extra.modem.phone;
             }
           },() => {
             this.route.navigate([Constants.LINK_SYSTEM_ERROR]);
           });
       });
-      this.spinner.hide();
-    } 
-  }
-
-  updateValueSerials(element: any, index: any){
-    MainComponent.dataUpdate.subscribe(res => {
-        if(element.port == this.serials[index].value.port){
-          this.serials[index].value.status = element.status;
-          this.serials[index].value.infor = element.infor;
-          this.serials[index].value.phone = element.phone;
-        }
-    });
+      
+    }
+    this.spinner.hide(); 
   }
 
   /**
@@ -144,7 +137,7 @@ export class MainComponent implements OnInit {
    * @param event 
    */
   loadphone() {
-    
+    this.serials = [];
     this.modem.getModem().subscribe((data: any) => {
       if (typeof data == "undefined") {
         this.route.navigate([Constants.LINK_SYSTEM_ERROR]);
